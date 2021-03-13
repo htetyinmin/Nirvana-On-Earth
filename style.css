@@ -3,6 +3,23 @@
     src: url("font/Roboto-Regular.ttf");
 }
 
+@font-face{
+    font-family: roboto-bold;
+    src: url("font/Roboto-Bold.ttf");
+}
+
 body{
     font-family: roboto;
 }
+
+/* Htet Yin Min Area */
+.tourSection h3{
+    font-family: roboto-bold;
+}
+
+.tourBookBtn{
+    background-color: #FF9E00;
+}
+
+
+/* Htet Yin Min End */
