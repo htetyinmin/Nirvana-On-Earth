@@ -17,9 +17,102 @@ body{
     font-family: roboto-bold;
 }
 
-.tourBookBtn{
-    background-color: #FF9E00;
+.tourCard h5{
+    font-family: roboto-bold;
 }
+
+.tourBtn, .tourBtn:link, .tourBtn:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    border: none;
+    cursor: pointer; 
+}
+  
+.tourBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.tourBtn:active, .tourBtn:focus {
+    outline: none;
+    transform: translateY(0.2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.tourBtn-white {
+    background-color: #fff;
+    color: #888; 
+}
+
+.tourCard{
+    perspective: 1500px;  /* for 3D effect */
+    position: relative;
+    height: 460px;
+}
+
+.tourCard-side{
+    height: 460px;
+    transition: all .8s ease;
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.tourCard-back-side{
+    transform: rotateY(180deg);
+}
+
+.tourCard-back-side-col {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730); 
+}
+
+.tourCard:hover .tourCard-front-side{
+    transform: rotateY(-180deg); 
+}
+.tourCard:hover .tourCard-back-side{
+    transform: rotateY(0); 
+}
+
+.tourCard-list{
+    list-style: none;
+}
+
+.tourCard-list li:not(:last-child) {
+    border-bottom: 1px solid #dee;
+}
+
+.tourCard-align{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tourCard-price-box {
+    /* text-align: center; */
+    color: #fff;
+    margin-bottom: 80px; 
+
+}
+
+.tourCard-price-only {
+    text-transform: uppercase;
+}
+
+.tourCard-price-value {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
 /* Htet Yin Min End */
 
 /* highlight */
