@@ -12,7 +12,29 @@ body{
     font-family: roboto;
 }
 
+/*** Button အတွက် discoverBtn ဆိုတဲ့ Class လေးကို ယူသုံးလို့ရပါတယ်၊ အတူတူပဲဆိုတော့ 😁 ***/
+
+
+
+
 /* Htet Yin Min Area */
+.scrollup {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    line-height: 42px;
+    cursor: pointer;
+    /* display: none; */
+    z-index: 2;
+    background-color: #FF9E00;
+    transition-delay: .5s;
+}
+
 .tourSection h3{
     font-family: roboto-bold;
 }
@@ -21,18 +43,37 @@ body{
     font-family: roboto-bold;
 }
 
+.discoverBtn, .discoverBtn:visited{
+    font-family: roboto-bold;    
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 30px;
+    border: 1px solid #FF9E00;
+    border-radius: 50px;
+    background: #FF9E00;
+}
+
+.discoverBtn:hover{
+    color: #000;
+    transition: .4s;
+    background: transparent;
+}
+
 .tourBtn, .tourBtn:link, .tourBtn:visited {
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    font-size: 14px;
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
 }
   
 .tourBtn:hover {
+    color: #888;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
@@ -55,7 +96,7 @@ body{
 }
 
 .tourCard-side{
-    height: 460px;
+    height: 470px;
     transition: all .8s ease;
     position: absolute;
     width: 100%;
@@ -97,7 +138,6 @@ body{
 }
 
 .tourCard-price-box {
-    /* text-align: center; */
     color: #fff;
     margin-bottom: 80px; 
 
@@ -112,8 +152,105 @@ body{
     font-weight: 100;
 }
 
+.tourMfix{
+    margin: 40px 0 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .tourCard{
+        margin: 30px 0;
+        height: auto;
+        border-radius: 3px;
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+    }
+    
+    .tourCard-side{
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    
+    .tourCard-back-side{
+        transform: rotateY(0);
+    }
+
+    .tourCard:hover .tourCard-front-side{
+        transform: rotateY(0);
+    }
+    .tourCard:hover .tourCard-back-side{
+        transform: rotateY(0); 
+    }
+    
+    .tourCard-align{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0);
+        padding: 70px 40px 40px 40px;
+    }
+    
+    .tourCard-price-box {
+        margin-bottom: 30px; 
+    
+    }
+    
+    .tourCard-price-value {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .tourCard{
+        margin: 30px 10px;
+        height: auto;
+        border-radius: 3px;
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+    }
+    
+    .tourCard-side{
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    
+    .tourCard-back-side{
+        transform: rotateY(0);
+    }
+
+    .tourCard:hover .tourCard-front-side{
+        transform: rotateY(0);
+    }
+    .tourCard:hover .tourCard-back-side{
+        transform: rotateY(0); 
+    }
+
+    .tourCard-align{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0);
+        padding: 50px 40px 40px 40px;
+    }
+    
+    .tourCard-price-box {
+        margin-bottom: 30px; 
+    
+    }
+    
+    .tourCard-price-value {
+        font-size: 40px;
+    }
+
+    .tourMfix{
+        margin: 0 0 30px 0;
+    }
+}
+
 
 /* Htet Yin Min End */
+
 
 /*Start Gallery */
 
