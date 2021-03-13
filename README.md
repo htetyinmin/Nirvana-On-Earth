@@ -1,2 +1,2 @@
 # Nirvana-On-Earth
-# Ninja Coder Team Project 01
+# *Ninja Coder Team* Project 01
