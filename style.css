@@ -1,11 +1,11 @@
 @font-face{
     font-family: roboto;
-    src: url("font/Roboto-Regular.ttf");
+    src: url(font/Roboto-Regular.ttf);
 }
 
 @font-face{
     font-family: roboto-bold;
-    src: url("font/Roboto-Bold.ttf");
+    src: url(font/Roboto-Bold.ttf);
 }
 
 body{
@@ -20,6 +20,93 @@ body{
 .tourBookBtn{
     background-color: #FF9E00;
 }
-
-
 /* Htet Yin Min End */
+
+/*Start Gallery */
+
+.gallery_title{
+    font-family: roboto-bold;
+    color: black;
+}
+.parent {
+    height: 370px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .7s;
+}
+
+.bg-one{
+      background-image: url(images/gallery-usa.jpg);
+}
+.bg-two{
+    background-image: url(images/gallery-switzerland.jpg);
+}
+.bg-three{
+    background-image: url(images/gallery-myanmar.jpg);
+}
+.bg-four{
+    background-image: url(images/gallery-tokyo.jpg);
+}
+.bg-five{
+    background-image: url(images/gallery-london.jpg);
+}
+.bg-six{
+    background-image: url(images/gallery-maldives.jpg);
+}
+
+.city_name{
+    display: none;
+    font-size: 18px;
+    color: #ffffff !important;
+    font-family: roboto;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover .city_name, .parent:focus .city_name {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(12, 12, 12, 0.75);
+}
+/* End Gallery */
