@@ -13,10 +13,66 @@ body{
 }
 
 /* kyaw san win */
-.home{
-    height: 100vh;
-    background-color: green;
+
+
+
+
+.logo_text{
+    font-size: 30px;
+    color: #FF9E00;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
 }
+
+.travel{
+    font-size: 25px;
+    font-family:monospace
+}
+
+.carousel-item {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.carousel_text{
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	transform: translate( -50%, -50%)	
+}
+
+.font{
+    font-size: 50px;
+}
+
+.co_title{
+    font-size: 20px;
+}
+
+.a{
+	color:  #E4790D;
+}
+
+.homebtn, .homebtn:visited{
+    font-family: roboto-bold;    
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 30px;
+    border: 1px solid #FF9E00;
+    border-radius: 50px;
+    background: #FF9E00;
+}
+
+.homebtn:hover{
+    color: rgb(219, 217, 217);
+    transition: .4s;
+    background: transparent;
+}
+
+
+/* End Home */
 
 /*** Button အတွက် discoverBtn ဆိုတဲ့ Class လေးကို ယူသုံးလို့ရပါတယ်၊ အတူတူပဲဆိုတော့ 😁 ***/
 
@@ -597,6 +653,7 @@ body{
     opacity: 0;
     pointer-events: none;
     transition: all .4s;
+    z-index: 2;
 }
 
 .to-top:hover{
@@ -638,7 +695,7 @@ body{
 
 .bg_highlight{
     background-image: url(images/gallery-maldives.jpg);
-    height: 400px;
+    height: 500px;
     background-attachment: fixed;
     background-size: cover;
 
