@@ -552,3 +552,37 @@ body{
     
 }
 /* endscrollup */
+
+/* hightlight */
+.highlight_frame{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+        ". a a ."
+        ". a a .";
+}
+.centerbtn{
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+
+}
+.play_btn{
+    color: white;
+    font-size: 100px;
+}
+
+.play_btn:hover{
+    color: #FF9E00;
+}
+
+.bg_highlight{
+    background-image: url(images/gallery-maldives.jpg);
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+/* end hightlight */
