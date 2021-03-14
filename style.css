@@ -8,6 +8,11 @@
     src: url(font/Roboto-Bold.ttf);
 }
 
+@font-face{
+    font-family: logo-font;
+    src: url(font/DancingScript-Bold.ttf);
+}
+
 body{
     font-family: roboto;
 }
@@ -579,7 +584,7 @@ body{
 /* End Gallery */
 
 /* Start About */
-.about-title h2{
+.about-title h3{
     font-family: roboto-bold;
 }
 
@@ -706,8 +711,15 @@ body{
 .contact{
     padding: 4%;
     font-family: roboto;
-    height: 400px;
+    height: 600px;
 }
+
+@media only screen and (max-width: 768px) {
+    .contact{
+        height: 860px;
+    }    
+}
+
 .col-md-3{
     background: #ff9E00;
     padding: 4%;
@@ -724,8 +736,9 @@ body{
     margin-bottom: 10%;
 }
 .col-md-9{
-    background: #fff;
+    /* background: #ffb900; */
     padding: 3%;
+    border: 2px solid #FF9E00;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
@@ -742,3 +755,37 @@ body{
     box-shadow:none;
 }
 /* Conatct end */
+
+/* Footer  */
+
+.myFooter{
+    background-color: #000;
+    color: #fff;
+}
+
+.myFooter h3{
+    color: #FF9E00;
+    font-family: roboto-bold;
+}
+
+.footerLogo{
+    font-family: logo-font;
+    font-size: 40px;
+}
+
+.footerNav{
+    border-top: 1px solid #777;
+    padding-top: 20px;
+    /* display: inline-block; */
+}
+
+.footerCopyright{
+    color:  #777;
+    border-top: 1px solid #777;
+    padding-top: 20px;
+    /* font-family: roboto-bold; */
+    font-size: 18px;
+    /* display: inline-block; */
+}
+
+/* Footer End  */

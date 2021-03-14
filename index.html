@@ -62,7 +62,7 @@
     <!-- End Home -->
 
     <!-- Place - Htet Yin Min -->
-    <section class="tourSection" id="tourSection">
+    <section class="tourSection" id="places">
         
         <div class="container">
             <h3 class="my-5 text-center">Most Popular Tours</h3>
@@ -214,13 +214,13 @@
 
 
     <!-- About - Aung Phone Pyae -->
-    <section class="text-center about">
+    <section class="text-center about" id="about">
         <div class="container">
 
            <div class="about-title">
                 <div class="col-sm-12">
                     <div class="section-title text-center">
-                        <h2>Who We Are?</h2>
+                        <h3>Who We Are?</h3>
                         <hr>
                     </div>
                 </div>
@@ -265,7 +265,7 @@
     <!-- End About -->
 
     <!-- Gallery - Kyaw Win Tun -->
-    <section id="tourGallery">
+    <section id="gallery">
         <div class="container-fluid my-5">
             <h3 class="text-center my-5 gallery_title">Tour Gallery</h3>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 my-4 gallerys">
@@ -335,15 +335,15 @@
     <!-- End travel Highlight -->
 
     <!-- Client - Thet Lin Aung -->
-    <section>
+    <section id="clients">
 
     </section>
     <!-- End Client -->
 
     <!-- Contact Us - Aung Phone Pyae -->
-    <section>
+    <section id="contact">
 
-        <div class="container contact">
+        <div class="container contact">          
             <div class="row">
 
                 <div class="col-md-3">
@@ -355,54 +355,82 @@
                 </div>
 
                 <div class="col-md-9">
-                    <div class="contact-form">
+                    <div class="contact-form ms-4">
 
-                        <div class="form-group">
-                          <label class="control-label col-sm-2" for="fname">First Name:</label>
-                          <div class="col-sm-10">          
-                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-                          </div>
+                        <div class="form-group mb-3">
+                        <label class="control-label col-sm-2" for="name">Name:</label>
+                        <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="name" placeholder="Enter Your Name" name="name">
+                        </div>
                         </div>
 
-                        <div class="form-group">
-                          <label class="control-label col-sm-2" for="lname">Last Name:</label>
-                          <div class="col-sm-10">          
-                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-                          </div>
+                        <div class="form-group mb-3">
+                        <label class="control-label col-sm-2" for="phnumber">Phone Number:</label>
+                        <div class="col-sm-10">          
+                            <input type="number" class="form-control" id="phnumber" placeholder="Enter Your Phone number" name="phnumber">
+                        </div>
                         </div>
 
-                        <div class="form-group">
-                          <label class="control-label col-sm-2" for="email">Email:</label>
-                          <div class="col-sm-10">
+                        <div class="form-group mb-3">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
                             <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                          </div>
+                        </div>
                         </div>
 
-                        <div class="form-group">
-                          <label class="control-label col-sm-2" for="comment">Comment:</label>
-                          <div class="col-sm-10">
+                        <div class="form-group mb-3">
+                        <label class="control-label col-sm-2" for="comment">Comment:</label>
+                        <div class="col-sm-10">
                             <textarea class="form-control" rows="5" id="comment"></textarea>
-                          </div>
+                        </div>
                         </div>
 
                         <div class="form-group">        
-                          <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">Submit</button>
-                          </div>
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <!-- <button type="submit" class="discoverBtn">Submit</button> -->
+                            <a href="#" class="discoverBtn">Submit</a>
+                        </div>
                         </div>
                         
                     </div>
-                </div>
-                
+                </div>                    
             </div>
         </div>
 
     </section>
     <!-- End Contact Us -->
 
-    <!-- Footer - Kyaw San Win -->
+    <!-- Footer - Htet Yin Min -->
     <section>
+        <footer class="myFooter mt-5 p-3">
+            
+            <h3 class="text-center pt-5">
+                <span class="footerLogo">- Nirvana -</span><br>On Earth
+            </h3>
+            <p class="text-center my-5" style="color:#777;">Made with love by Ninja Coder Team ♥</p>
 
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="navbar navbar-expand navbar-dark footerNav">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item text-uppercase"><a href="" class="nav-link">Company</a></li>
+                                <li class="nav-item text-uppercase"><a href="" class="nav-link">Contact us</a></li>
+                                <li class="nav-item text-uppercase"><a href="" class="nav-link">Privacy Policy</a></li>
+                                <li class="nav-item text-uppercase"><a href="" class="nav-link">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-6">
+                        <div class="footerCopyright text-center">
+                            ©Copyright | N-Travel 2021. All Right Reserved
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
     </section>
     <!-- End Footer -->
 
