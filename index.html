@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+    
 </head>
 <body>
     <!-- Home - Kyaw San Win -->
@@ -201,42 +203,53 @@
     <section id="tourGallery">
         <div class="container-fluid my-5">
             <h3 class="text-center my-5 gallery_title">Tour Gallery</h3>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 my-4">
-                   <div class="col p-0 parent">
-                         <div class="child bg-one">
-                               <h2 class="city_name">Suspension Bridge, USA</h2>
-                         </div>
-                   </div>
-                   <div class="col p-0 parent">
-                         <div class="child bg-two">
-                               <h2 class="city_name">Lucena View, Switzerland</h2>
-                               <figcaption class="gallery_view">
-                                   <a href="images/gallery-usa.jpg">View More</a>
-                               </figcaption>
-                         </div>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 my-4 gallerys">
+
+                    <div class="col p-0 parent">
+                        <a href="images/gallery-usa.jpg" target="_blink">
+                        <div class="child bg-one">
+                            <h2 class="city_name">Suspension Bridge, USA</h2>
+                        </div>
+                        </a>
                     </div>
+
+                   <div class="col p-0 parent">
+                        <a href="images/gallery-switzerland.jpg" target="_blink">
+                        <div class="child bg-two">
+                              <h2 class="city_name">Lucena View, Switzerland</h2>
+                        </div>
+                        </a>
+                    </div>
+
                   <div class="col p-0 parent">
+                        <a href="images/gallery-myanmar.jpg" target="_blink">
                         <div class="child bg-three">
                               <h2 class="city_name">Golden Bagan, Myanmar</h2>
-                              <figcaption class="gallery_view">
-                                <a href="images/gallery-usa.jpg">View More</a>
-                            </figcaption>
                         </div>
+                        </a>
                    </div>
+
                    <div class="col p-0 parent">
+                         <a href="images/gallery-tokyo.jpg" target="_blink">
                          <div class="child bg-four">
                                <h2 class="city_name">Beautiful Tokyo, Japan</h2>
                          </div>
+                         </a>
                     </div>
+
                     <div class="col p-0 parent">
+                         <a href="images/gallery-london.jpg" target="_blink">
                          <div class="child bg-five">
                                <h2 class="city_name">Urban City, London</h2>
                          </div>
+                         </a>
                     </div>
                     <div class="col p-0 parent">
-                         <div class="child bg-six">
-                               <h2 class="city_name">Amazing Beach, Moldives</h2>
-                         </div>
+                        <a href="images/gallery-maldives.jpg" target="_blink">
+                            <div class="child bg-six">
+                                  <h2 class="city_name">Amazing Beach, Moldives</h2>>
+                            </div>
+                            </a>>
                     </div>
  
             </div>            
@@ -263,9 +276,23 @@
     <!-- End Footer -->
     
     <script src="jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="script.js"></script>
+    <!-- GalleryPopUp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script>
+          $(document).ready(function(){
+                $('.gallerys').magnificPopup({
+                      type:'image',
+                      delegate: 'a',
+                      gallery:{
+                            enabled:true
+                      }
+                })
+          })
+    </script>
+
 </body>
 </html>
 
