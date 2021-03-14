@@ -21,6 +21,16 @@ $(document).ready(function () {
             }
         }]
     });
-    // Plugin end 
+    // Plugin end \
     
+    // popup Gallery 
+    $('.gallerys').magnificPopup({
+        type:'image',
+        delegate: 'a',
+        gallery:{
+              enabled:true
+        }
+    })
+    // popup Gallery End
+
 });
