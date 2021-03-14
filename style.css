@@ -679,8 +679,9 @@ body{
     margin-bottom: 10%;
 }
 .col-md-9{
-    background: #ffb900;
+    /* background: #ffb900; */
     padding: 3%;
+    border: 2px solid #FF9E00;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
