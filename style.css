@@ -685,3 +685,12 @@ body{
     box-shadow:none;
 }
 /* Conatct end */
+
+/* Footer  */
+
+.myFooter{
+    background-color: #000;
+    color: #fff;
+}
+
+/* Footer End  */
