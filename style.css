@@ -76,7 +76,7 @@ body{
     background: transparent;
 }
 
-div.transbox {
+/* div.transbox {
 
     margin: 30px;
     padding: 15px;
@@ -84,8 +84,9 @@ div.transbox {
     border: 1px solid rgb(63, 37, 37);
     border-radius: 5px;
     opacity: 0.6;
+    z-index: 100;
 
-  }
+  } */
 
 
 /* End Home */
