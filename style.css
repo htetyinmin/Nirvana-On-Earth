@@ -17,11 +17,9 @@ body{
     font-family: roboto;
 }
 
+/*** Button အတွက် discoverBtn ဆိုတဲ့ Class လေးကို ယူသုံးလို့ရပါတယ်၊ အတူတူပဲဆိုတော့ 😁 ***/
+
 /* kyaw san win */
-
-
-
-
 .logo_text{
     font-size: 35px;
     color: #FF9E00;
@@ -90,14 +88,9 @@ body{
     opacity: 0.6;
     z-index: 100;
 
-  } */
-
+} */
 
 /* End Home */
-
-/*** Button အတွက် discoverBtn ဆိုတဲ့ Class လေးကို ယူသုံးလို့ရပါတယ်၊ အတူတူပဲဆိုတော့ 😁 ***/
-
-
 
 
 /* Htet Yin Min Area */
@@ -813,7 +806,6 @@ body{
     color:  #777;
     border-top: 1px solid #777;
     padding-top: 20px;
-    /* font-family: roboto-bold; */
     font-size: 18px;
     /* display: inline-block; */
 }
