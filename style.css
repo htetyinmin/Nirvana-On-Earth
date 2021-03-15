@@ -612,11 +612,13 @@ body{
     padding-bottom: 30px;
 }
 .about h3 {
-    opacity: .8;
+    /* opacity: .8; */
 }
 .about p {
-    text-align: center;
+    text-align: justify;
     color: grey;
+    line-height: 30px;
+    margin: 20px 0 0 20px;
 }
 .about span {
     display: block;
