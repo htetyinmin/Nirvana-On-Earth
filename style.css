@@ -604,9 +604,9 @@ body{
     padding-top: 20px;
     padding-bottom: 30px;
 }
-.about h3 {
-    /* opacity: .8; */
-}
+/* .about h3 {
+    opacity: .8;
+} */
 .about p {
     text-align: justify;
     color: grey;
@@ -625,12 +625,7 @@ body{
     opacity: 0.7;
     background-color: #FF9E00;
     border: 2px solid #FF9E00;
-
-    webkit-transition:all .5s ease;
-    moz-transition:all .5s ease;
-    os-transition:all .5s ease;
     transition:all .5s ease;
-
 }
 .about-item:hover span{
     opacity: 1; 
@@ -729,16 +724,12 @@ body{
         height: 860px;
     } 
     .col-md-3{
-        border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0 !important;
     } 
     .col-md-9{
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-top-right-radius: 0 !important;
         border-bottom-left-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
     }  
 }
 
