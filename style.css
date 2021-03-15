@@ -729,7 +729,19 @@ body{
 @media only screen and (max-width: 768px) {
     .contact{
         height: 860px;
-    }    
+    } 
+    .col-md-3{
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    } 
+    .col-md-9{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }  
 }
 
 .col-md-3{
