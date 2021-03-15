@@ -76,6 +76,10 @@ body{
     background: transparent;
 }
 
+.home_smalldiv h4{
+    font-family: roboto-bold;
+}
+
 /* div.transbox {
 
     margin: 30px;
