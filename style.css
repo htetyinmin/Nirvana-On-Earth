@@ -707,12 +707,12 @@ body{
 
 }
 .play_btn{
-    color: white;
+    color: #FF9E00;
     font-size: 100px;
 }
 
 .play_btn:hover{
-    color: #FF9E00;
+    color: white;
 }
 
 .bg_highlight{
