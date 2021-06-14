@@ -31,7 +31,7 @@
                     <li class="nav-item mx-3 "><a href="#places" class="nav-link text-uppercase">Places</a></li>
                     <li class="nav-item mx-3 "><a href="#about" class="nav-link text-uppercase">About</a></li>
                     <li class="nav-item mx-3 "><a href="#gallery" class="nav-link text-uppercase">Gallery</a></li>
-                    <li class="nav-item mx-3 "><a href="#" class="nav-link text-uppercase">Clients</a></li>
+                    <li class="nav-item mx-3 "><a href="#clients" class="nav-link text-uppercase">Clients</a></li>
                     <li class="nav-item mx-3 "><a href="#contact" class="nav-link text-uppercase">Contact Us</a></li>
                 </ul>
             </div>
@@ -65,7 +65,8 @@
                 <div class="carousel_text d-none d-lg-block">
                     <h1 class="font">Enjoy Vacation With <b class="a">N-Earth</b></h1>
                     <p class="my-4 co_title">Travel to the any corner of the world, without going around in circles.</p>
-                    <button class="homebtn mt-3"><b>Book a Tour</b></button>
+                    <button class="homebtn mt-3" data-bs-target="#Modal" data-bs-toggle="modal"><b>Book a
+                            Tour</b></button>
                 </div>
             </div>
 
@@ -109,7 +110,8 @@
                                     <p class="tourCard-price-only">Only</p>
                                     <p class="tourCard-price-value">$1200</p>
                                 </div>
-                                <a href="#" class="tourBtn tourBtn-white">Book Now!</a>
+                                <a href="#" class="tourBtn tourBtn-white" data-bs-target="#Modal"
+                                    data-bs-toggle="modal">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -137,7 +139,8 @@
                                     <p class="tourCard-price-only">Only</p>
                                     <p class="tourCard-price-value">$1499</p>
                                 </div>
-                                <a href="#" class="tourBtn tourBtn-white">Book Now!</a>
+                                <a href="#" class="tourBtn tourBtn-white" data-bs-target="#Modal"
+                                    data-bs-toggle="modal">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -165,7 +168,8 @@
                                     <p class="tourCard-price-only">Only</p>
                                     <p class="tourCard-price-value">$1699</p>
                                 </div>
-                                <a href="" class="tourBtn tourBtn-white">Book Now!</a>
+                                <a href="" class="tourBtn tourBtn-white" data-bs-target="#Modal"
+                                    data-bs-toggle="modal">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +197,8 @@
                                     <p class="tourCard-price-only">Only</p>
                                     <p class="tourCard-price-value">$850</p>
                                 </div>
-                                <a href="#" class="tourBtn tourBtn-white">Book Now!</a>
+                                <a href="#" class="tourBtn tourBtn-white" data-bs-target="#Modal"
+                                    data-bs-toggle="modal">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -271,22 +276,22 @@
 
                 <div class="col-lg-3 col-sm-6 col-ex-12 mb-4 my-3 about-item wow lightSpeedIn" data-wow-offset="200">
                     <span class="fa fa-percent"></span>
-                    <h3 class="mt-2">Travel Cheap</h3>
+                    <h5 class="mt-4">Travel Cheap</h5>
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-ex-12 mb-4 my-3 about-item wow lightSpeedIn" data-wow-offset="200">
                     <span class="fa fa-plane"></span>
-                    <h3 class="mt-2">Travel Comfort</h3>
+                    <h5 class="mt-4">Travel Comfort</h5>
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-ex-12 mb-4 my-3 about-item wow lightSpeedIn" data-wow-offset="200">
                     <span class="fa fa-heart"></span>
-                    <h3 class="mt-2">Travel Safe</h3>
+                    <h5 class="mt-4">Travel Safe</h5>
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-ex-12 mb-4 my-3 about-item wow lightSpeedIn" data-wow-offset="200">
                     <span class="fa fa-smile"></span>
-                    <h3 class="mt-2">Travel Happy</h3>
+                    <h5 class="mt-4">Travel Happy</h5>
                 </div>
 
             </div>
@@ -367,9 +372,8 @@
     <!-- End travel Highlight -->
 
     <!-- Client - Thet Lin Aung -->
-    <section id="clients">
 
-    </section>
+
     <!-- End Client -->
 
     <!-- Contact Us - Aung Phone Pyae -->
@@ -483,3 +487,41 @@
 </html>
 
 <!-- Model - Thet Lin Aung -->
+<div class="modal  fade" id="Modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book a Tour</h3>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <input type="text" placeholder="Enter Name" class="form-control"><br>
+                    <input type="text" placeholder="Enter Email" class="form-control"><br>
+                    <select id="day" name="day" class="form-control">
+                        <option value="Howmanydays?"><span class="caret"></span> How Many Days? </option>
+                        <option value="2days">2 days</option>
+                        <option value="3days">3 days</option>
+                        <option value="4days">4 days</option>
+                    </select>
+                    <br>
+                    <select id="person" name="person" class="form-control">
+                        <option value="Howmanyperson?">How Many Person? </option>
+                        <option value="1person">1 person</option>
+                        <option value="2person">2 person</option>
+                        <option value="3person">3 person</option>
+                    </select>
+                    <br>
+                    <textarea name="" id="" cols="30" rows="" class="form-control"
+                        placeholder="Your Message"></textarea><br>
+                    <button class="discoverBtn">Book Now</button>
+                </div>
+                <br>
+
+            </div>
+            <!-- <div class="modal-footer">
+                <button data-bs-dismiss="modal" class="discoverBtn">Close</button>
+            </div> -->
+        </div>
+    </div>
+</div>
