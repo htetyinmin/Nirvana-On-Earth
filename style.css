@@ -685,13 +685,86 @@ body {
 }
 
 .bg_highlight {
-  background-image: url(images/gallery-maldives.jpg);
+  background-image: url(images/highlight.jpg);
   height: 500px;
   background-attachment: fixed;
   background-size: cover;
 }
 /* end hightlight */
 
+/* client start */
+.pn_testimonial_box {
+  font-weight: 300;
+  padding: 2rem;
+  margin: 2rem;
+  border: 1px solid #000;
+  position: relative;
+  transition: 1s;
+  transform: scale(0.9);
+  background-color: #fff;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  border-radius: 4rem;
+}
+.pn_testimonial_box:hover {
+  box-shadow: 2px 4px 8px #ff9e00;
+  border: 1px solid #ff9e00;
+  transform: scale(1);
+  position: relative;
+  z-index: 1;
+}
+.pn_review_rating img {
+  width: 20%;
+}
+.pn_review_profile img {
+  position: absolute;
+  margin: -1rem -5rem 0;
+}
+.pn_review_profile span {
+  position: absolute;
+}
+
+
+@media (max-width: 575px) {
+    .pn_reviews {
+        padding: 3rem 0;
+    }
+    .pn_reviews h1 {
+        font-size: 2rem;
+        padding-bottom: 1rem !important;
+    }
+    .pn_testimonial_box {
+        padding: 2rem;
+        margin: 1rem;
+        border: 1px solid #405fbd;
+        position: relative;
+        -webkit-border-radius: 4rem;
+        -moz-border-radius: 4rem;
+        -ms-border-radius: 4rem;
+        border-radius: 4rem;
+    }
+    .pn_review_profile img {
+        position: absolute;
+        margin: -1.1rem -3rem 0;
+    }
+    .pn_review_profile span {
+        position: absolute;
+        padding: 1rem;
+    }
+    .pn_review_rating img {
+        width: auto;
+    }
+
+}
+
+.border-radius{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #F5F2F1;
+  border-radius: 50%;
+}
+/* client end */
 /* Conatct start */
 .contact {
   padding: 4%;
